@@ -1,14 +1,14 @@
 {
   "Header": {
     "Menu": {
-      "discography": "Discography",
-      "music-videos": "Music Videos",
-      "lyrics": "Lyrics",
-      "tablatures": "Tablatures",
-      "interviews": "Interviews",
-      "stuff": "Stuff",
-      "side-projects": "Side Projects",
-      "the-band": "The Band"
+      "discography": "Дискография",
+      "music-videos": "Видеоклипы",
+      "lyrics": "Тексты песен",
+      "tablatures": "Табулатуры",
+      "interviews": "Интервью",
+      "stuff": "Атрибутика",
+      "side-projects": "Сторонние проекты",
+      "the-band": "Группа"
     }
   },
   "Sidebar": {},
