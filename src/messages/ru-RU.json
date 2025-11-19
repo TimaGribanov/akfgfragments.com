@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "Menu": {
+      "discography": "Discography",
+      "music-videos": "Music Videos",
+      "lyrics": "Lyrics",
+      "tablatures": "Tablatures",
+      "interviews": "Interviews",
+      "stuff": "Stuff",
+      "side-projects": "Side Projects",
+      "the-band": "The Band"
+    }
+  },
+  "Sidebar": {},
+  "Footer": {}
+}
