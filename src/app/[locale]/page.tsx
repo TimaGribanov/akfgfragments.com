@@ -14,10 +14,10 @@ export default function HomePage({params}: Props) {
     setRequestLocale(locale)
 
     return (
-        <div className="content">
+        <div className="content flex flex-col h-screen">
             <Header />
             <Main />
-            <Footer />
+            <Footer locale={locale} />
         </div>
     )
 }

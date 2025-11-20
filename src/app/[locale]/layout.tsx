@@ -6,6 +6,7 @@ import {routing} from '@/i18n/routing'
 import React from 'react'
 import type {Metadata} from 'next'
 import '@/app/globals.css'
+import {ThemeProvider} from 'next-themes'
 
 //TODO: почему-то русский текст выглядит уродливо в этом шрифте, надо будет проверить
 const notoSerif = Noto_Serif({
@@ -51,10 +52,12 @@ export default async function LocaleLayout({children, params}: Props) {
     setRequestLocale(locale)
 
     return (
-        <html lang={locale}>
-        <body className={`bg-white dark:bg-gray-800 ${notoSerif.variable} ${shipporiMincho.variable}`}>
+        <html lang={locale} suppressHydrationWarning>
+        <body className={`${notoSerif.variable} ${shipporiMincho.variable} bg-(--main-colour) dark:bg-(--main-colour-dark) text-(--text-colour) dark:text-(--text-colour-dark)`}>
         <NextIntlClientProvider>
-            {children}
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                {children}
+            </ThemeProvider>
         </NextIntlClientProvider>
         </body>
         </html>

@@ -8,9 +8,9 @@ const Main = () => {
 
     const t = useTranslations()
     return (
-        <div>
+        <main className="mb-auto h-10">
 
-        </div>
+        </main>
     )
 }
 
