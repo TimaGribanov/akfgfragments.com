@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "Menu": {
+      "discography": "Дискография",
+      "music-videos": "Видеоклипы",
+      "lyrics": "Тексты песен",
+      "tablatures": "Табулатуры",
+      "interviews": "Интервью",
+      "stuff": "Атрибутика",
+      "side-projects": "Сторонние проекты",
+      "the-band": "Группа"
+    }
+  },
+  "Sidebar": {},
+  "Footer": {}
+}
