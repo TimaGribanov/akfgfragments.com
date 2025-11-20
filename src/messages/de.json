@@ -1,14 +1,14 @@
 {
   "Header": {
     "Menu": {
-      "discography": "Discography",
-      "music-videos": "Music Videos",
-      "lyrics": "Lyrics",
-      "tablatures": "Tablatures",
+      "discography": "Diskografie",
+      "music-videos": "Musikvideos",
+      "lyrics": "Songtexte",
+      "tablatures": "Tablaturen",
       "interviews": "Interviews",
-      "stuff": "Stuff",
-      "side-projects": "Side Projects",
-      "the-band": "The Band"
+      "stuff": "Zeug",
+      "side-projects": "Nebenprojekte",
+      "the-band": "Die Band"
     }
   },
   "Sidebar": {},

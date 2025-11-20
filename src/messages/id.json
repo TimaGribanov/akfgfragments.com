@@ -1,13 +1,13 @@
 {
   "Header": {
     "Menu": {
-      "discography": "Discography",
-      "music-videos": "Music Videos",
-      "lyrics": "Lyrics",
-      "tablatures": "Tablatures",
-      "interviews": "Interviews",
-      "stuff": "Stuff",
-      "side-projects": "Side Projects",
+      "discography": "Diskografi",
+      "music-videos": "Video Musik",
+      "lyrics": "Lirik",
+      "tablatures": "Tablatur",
+      "interviews": "Wawancara",
+      "stuff": "Barang",
+      "side-projects": "Proyek Lainnya",
       "the-band": "The Band"
     }
   },

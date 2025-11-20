@@ -1,14 +1,14 @@
 {
   "Header": {
     "Menu": {
-      "discography": "Discography",
-      "music-videos": "Music Videos",
-      "lyrics": "Lyrics",
-      "tablatures": "Tablatures",
-      "interviews": "Interviews",
-      "stuff": "Stuff",
-      "side-projects": "Side Projects",
-      "the-band": "The Band"
+      "discography": "Discografia",
+      "music-videos": "Video Musicali",
+      "lyrics": "Testi",
+      "tablatures": "Intavolature",
+      "interviews": "Interviste",
+      "stuff": "Roba",
+      "side-projects": "Progetti Secondari",
+      "the-band": "La Banda"
     }
   },
   "Sidebar": {},
