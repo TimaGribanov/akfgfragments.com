@@ -12,5 +12,10 @@
     }
   },
   "Sidebar": {},
-  "Footer": {}
+  "Footer": {
+    "tag-line": "Dein Guide zur Asian Kung-Fu Generation Welt",
+    "about-us": "Über uns",
+    "team": "Unser Team",
+    "thanks": "Danksagung"
+  }
 }

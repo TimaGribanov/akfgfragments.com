@@ -12,5 +12,10 @@
     }
   },
   "Sidebar": {},
-  "Footer": {}
+  "Footer": {
+    "tag-line": "ASIAN KUNG-FU GENERATIONの<crossed>ワールドワールド</crossed>ワールドへの君のガイド",
+    "about-us": "私たちについて",
+    "team": "チーム",
+    "thanks": "感謝"
+  }
 }

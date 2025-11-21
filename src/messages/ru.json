@@ -12,5 +12,10 @@
     }
   },
   "Sidebar": {},
-  "Footer": {}
+  "Footer": {
+    "tag-line": "Твой гид в мир Asian Kung-Fu Generation",
+    "about-us": "О нас",
+    "team": "Наша команда",
+    "thanks": "Благодарности"
+  }
 }
