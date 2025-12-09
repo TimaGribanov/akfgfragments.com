@@ -8,7 +8,7 @@ type Props = {
     params: Promise<{ locale: string }>;
 }
 
-export default function HomePage({params}: Props) {
+export default function DiscographyPage({params}: Props) {
     const {locale} = use(params)
 
     setRequestLocale(locale)
@@ -16,7 +16,7 @@ export default function HomePage({params}: Props) {
     return (
         <div className="content flex flex-col">
             <Header />
-            <MainBlock locale={locale} />
+            <MainBlock />
             <Footer locale={locale} />
         </div>
     )

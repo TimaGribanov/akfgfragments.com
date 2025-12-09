@@ -11,26 +11,34 @@ const Footer = ({locale}: { locale: string }) => {
     const t = useTranslations('Footer')
 
     return (
-        <footer className="h-[320] p-3 grid grid-flow-row grid-rows-2 border-t border-t-(--text-colour) dark:border-t-(--text-colour-dark) font-noto-serif">
-            <div className="grid grid-flow-col grid-cols-2">
-                <div>
-                    <p>akfgfragments.com</p>
-                    <p>{t.rich('tag-line', {
-                        crossed: (chunks) => <s>{chunks}</s>
-                    })}</p>
+        <footer className="p-3 border-t border-t-(--text-colour) dark:border-t-(--text-colour-dark)">
+            <div className="flex">
+                <div className="w-4/6">
+                    <div className="flex flex-col gap-2">
+                        <p className="font-bold">akfgfragments.com</p>
+                        <p>{t.rich('tag-line', {
+                            crossed: (chunks) => <s>{chunks}</s>
+                        })}</p>
+                    </div>
                 </div>
-                <div className="grid grid-flow-col grid-cols-2">
-                    <div className="flow">
+                <div className="w-1/6 flex justify-center">
+                    <div className="flex flex-col gap-2">
                         <FooterLink href="/about-us" title={t('about-us')} />
                         <FooterLink href="/our-team" title={t('team')} />
                         <FooterLink href="/thanks" title={t('thanks')} />
                     </div>
-                    <div>
+                </div>
+                <div className="w-1/6 flex justify-center">
+                    <div className="flex flex-col gap-2">
                         <FooterLink href="https://www.instagram.com/akfgfragments_com/" title="Instagram" />
-                        <FooterLink href={locale === "ru" ? "https://twitter.com/akfgfragmentsRu" : "https://twitter.com/AkfgfragmentsEn"} title="Twitter" />
+                        <FooterLink
+                            href={locale === "ru" ? "https://twitter.com/akfgfragmentsRu" : "https://twitter.com/AkfgfragmentsEn"}
+                            title="Twitter" />
                         <FooterLink href="https://bsky.app/profile/akfgfragments.bsky.social" title="Bluesky" />
                         <FooterLink href="https://facebook.com/akfgfragmentscom" title="Facebook" />
-                        <FooterLink href={locale === "ru" ? "https://t.me/akfgfragments_ru" : "https://t.me/akfgfragments"} title="Telegram" />
+                        <FooterLink
+                            href={locale === "ru" ? "https://t.me/akfgfragments_ru" : "https://t.me/akfgfragments"}
+                            title="Telegram" />
                         <FooterLink href="https://discord.gg/mQJ4TcjM3h" title="Discord" />
                         <FooterLink href="https://www.tiktok.com/@akfgfragments" title="Tiktok" />
                         <FooterLink href="https://www.youtube.com/@akfgfragmentscom" title="Youtube" />
@@ -38,7 +46,7 @@ const Footer = ({locale}: { locale: string }) => {
                     </div>
                 </div>
             </div>
-            <div className="">
+            <div className="w-full flex justify-center">
                 akfgfragments © {new Date().getFullYear()}
             </div>
         </footer>

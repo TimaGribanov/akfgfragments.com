@@ -53,7 +53,7 @@ export default async function LocaleLayout({children, params}: Props) {
 
     return (
         <html lang={locale} suppressHydrationWarning>
-        <body className={`${notoSerif.variable} ${shipporiMincho.variable} bg-(--main-colour) dark:bg-(--main-colour-dark) text-(--text-colour) dark:text-(--text-colour-dark)`}>
+        <body className={`${notoSerif.variable} ${shipporiMincho.variable} ${nunito.variable} font-noto-serif bg-(--main-colour) dark:bg-(--main-colour-dark) text-(--text-colour) dark:text-(--text-colour-dark)`}>
         <NextIntlClientProvider>
             <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                 {children}

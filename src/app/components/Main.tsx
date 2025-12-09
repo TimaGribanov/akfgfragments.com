@@ -1,15 +1,9 @@
-'use client'
+import Feed from '@/app/components/Feed'
 
-import Sidebar from './Sidebar'
-import {useTranslations} from 'use-intl'
-
-
-const Main = () => {
-
-    const t = useTranslations()
+const Main = ({locale}: { locale: string }) => {
     return (
-        <main className="mb-auto h-10">
-
+        <main className="w-3/4">
+            <Feed locale={locale} />
         </main>
     )
 }

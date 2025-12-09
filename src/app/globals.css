@@ -2,14 +2,32 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
+@theme static {
     --font-noto-serif: var(--font-noto-serif);
     --font-shippori-mincho: var(--font-shippori-mincho);
     --font-nunito: var(--font-nunito);
 
-    --main-colour: #f2ece2;
-    --main-colour-dark: #121212;
+    /*light theme*/
+    --main-colour: #fBf6e8;
+    --text-colour: #323031;
+    --link-underline-colour: #628395;
+    --button-colour: #6ba368;
+    --error-colour: #c05746;
 
-    --text-colour: #292929;
-    --text-colour-dark: #f1f1f1;
+    /*dark-theme*/
+    --main-colour-dark: #2b2d42;
+    --text-colour-dark: #eaf0ce;
+    --link-underline-colour-dark: #c6b9cd;
+    --button-colour-dark: #5e8c61;
+    --error-colour-dark: #c84630;
+
+    --discord-colour: #5865f2;
+    --instagram-colour: #ff0069;
+    --twitter-colour: #00acee;
+    --kofi-colour: #ff6433;
+}
+
+a:hover:not(#logo):not(.button) {
+    @apply underline decoration-10 decoration-(--link-underline-colour) dark:decoration-(--link-underline-colour-dark) -underline-offset-3;
+    text-decoration-skip-ink: none;
 }

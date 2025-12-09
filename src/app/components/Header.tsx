@@ -12,7 +12,7 @@ import React, {useEffect, useState} from 'react'
 import {useTheme} from 'next-themes'
 
 const Logo = () => (
-    <Link href="/" className="flex items-center">
+    <Link id="logo" href="/" className="flex items-center">
         <Image className="block dark:hidden" src="/images/logo.png" alt="Site logo" width={50} height={50} />
         <Image className="hidden dark:block" src="/images/logo-dark.png" alt="Site logo" width={50} height={50} />
         <span className="text-3xl ms-2 leading-none mb-2">akfgfragments</span>
@@ -30,7 +30,7 @@ const MenuBlock = () => {
         <ul className="flex flex-row gap-4">
             {MENU_ELEMENTS.map((element, index) =>
                 <li key={index}>
-                    <Link href={`/${element}`} className="block uppercase text-lg hover:underline hover:decoration-2">
+                    <Link href={`/${element}`} className="block uppercase text-lg">
                         {t(element)}
                     </Link>
                 </li>)}
@@ -113,9 +113,9 @@ const ThemeToggle = () => {
 
 const Header = () => {
     return (
-        <header className="h-[90]">
+        <header className="font-nunito">
             <nav
-                className="fixed w-full top-0 start-0 font-nunito p-5 border-b border-b-(--main-colour-dark) dark:border-b-(--main-colour)">
+                className="w-full top-0 start-0 p-5 border-b border-b-(--main-colour-dark) dark:border-b-(--main-colour)">
                 <div className="flex flex-wrap items-center justify-between">
                     <Logo />
                     <MenuBlock />
