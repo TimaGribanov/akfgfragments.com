@@ -22,7 +22,7 @@ jobs:
 
       - name: Git Submodule Update
         run: |
-          gut pull --recurse-submodules
+          git pull --recurse-submodules
           git submodule update --remote --recursive
 
       - name: Commit update
