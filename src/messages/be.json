@@ -11,7 +11,36 @@
       "the-band": "Гурт"
     }
   },
-  "Sidebar": {},
+  "Sidebar": {
+    "Buttons": {
+      "Discord": {
+        "title": "Join our Discord server!",
+        "description": "We have interesting Asian Kung-Fu Generation related discussions there, and more!",
+        "button-text": "Join"
+      },
+      "Instagram": {
+        "title": "Follow us on Instagram!",
+        "description": "Colourful input into all things Ajikan!",
+        "button-text": "Follow"
+      },
+      "Twitter": {
+        "title": "Follow us on Twitter!",
+        "description": "All the news are there!",
+        "button-text": "Follow"
+      },
+      "Support": {
+        "title": "Support our project on Ko-fi!",
+        "description": "Help us maintain the project!",
+        "button-text": "Support"
+      }
+    },
+    "Latest-release": {
+      "latest-release": "The latest release",
+      "release-date": "Release date",
+      "type": "Type",
+      "more": "More about this release"
+    }
+  },
   "Footer": {
     "tag-line": "Твой гід у сьвет Asian Kung-Fu Generation",
     "about-us": "Пра нас",
