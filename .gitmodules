@@ -1,0 +1,9 @@
+[submodule "akfgfragments-admin-pages"]
+	path = akfgfragments-admin-pages
+	url = git@github.com:TimaGribanov/akfgfragments-admin-pages
+[submodule "akfgfragments-frontend"]
+	path = akfgfragments-frontend
+	url = git@github.com:TimaGribanov/akfgfragments-frontend
+[submodule "data-graphql-server"]
+	path = data-graphql-server
+	url = git@github.com:TimaGribanov/akfgfragments-graphql-server
