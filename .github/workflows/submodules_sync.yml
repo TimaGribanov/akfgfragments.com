@@ -21,7 +21,7 @@ jobs:
 
       - name: Git Submodule Update
         run: |
-          git pull --recurse-submodules
+          git pull origin ${{ github.ref }} --recurse-submodules
           git submodule update --remote --recursive
 
       - name: Commit update
