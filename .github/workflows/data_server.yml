@@ -46,14 +46,11 @@ jobs:
     steps:
       - name: Define path
         id: define-path
-        if: github.ref == 'refs/heads/main'
         run: |
-          echo "::set-output name=path::${{ secrets.DATA_SERVER_PATH }}"
-      - name: Define test path
-        id: define-path
-        if: github.ref == 'refs/heads/test'
-        run: |
-          echo "::set-output name=path::${{ secrets.DATA_SERVER_PATH_TEST }}"
+          if [ ${{ github.ref }} -eq 'refs/heads/main' ]; then
+            echo "::set-output name=path::${{ secrets.DATA_SERVER_PATH }}"
+          else
+            echo "::set-output name=path::${{ secrets.DATA_SERVER_PATH_TEST }}"
       - name: Download artifact
         uses: actions/download-artifact@v6
         with:
