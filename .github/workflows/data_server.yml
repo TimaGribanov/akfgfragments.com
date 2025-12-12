@@ -4,9 +4,6 @@ concurrency: production
 
 on:
   push:
-    branches:
-      - main
-      - test
     paths:
       - 'data-graphql-server/**'
 
