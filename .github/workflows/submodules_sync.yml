@@ -27,6 +27,7 @@ jobs:
       - name: Git Submodule Update
         run: |
           git pull origin ${{ steps.define-branch.outputs.branch }} --recurse-submodules
+          git config remote.origin.fetch +refx/heads/*:refs/remotes/origin/*
           git submodule update --remote --recursive
 
       - name: Commit update
