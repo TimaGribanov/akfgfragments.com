@@ -1,8 +1,7 @@
-name: 'Synchronise Submodules'
+name: Synchronise Submodules
 
 on:
   workflow_dispatch:
-
 
 jobs:
   sync:
