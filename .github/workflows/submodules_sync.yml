@@ -21,7 +21,6 @@ jobs:
 
       - name: Determine branch
         id: define-branch
-        if: github.ref == 'refs/heads/main'
         run: |
           if [ ${{ github.ref }} -eq 'refs/heads/main' ]; then
             echo "::set-output name=branch::main"
