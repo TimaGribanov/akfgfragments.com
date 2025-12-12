@@ -19,9 +19,21 @@ jobs:
           token: ${{ secrets.CI_TOKEN }}
           submodules: true
 
+      - name: Determine branch
+        id: define-branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+          echo "::set-output name=branch::main"
+
+      - name: Determine branch
+        id: define-branch
+        if: github.ref == 'refs/heads/test'
+        run: |
+          echo "::set-output name=branch::test"
+
       - name: Git Submodule Update
         run: |
-          git pull origin ${{ github.ref }} --recurse-submodules
+          git pull origin ${{ steps.define-branch.outputs.branch }} --recurse-submodules
           git submodule update --remote --recursive
 
       - name: Commit update
