@@ -22,7 +22,7 @@ jobs:
       - name: Determine branch
         id: define-branch
         run: |
-          if [ ${{ github.ref }} == "refs/heads/main"'" ]; then echo "::set-output name=branch::main"; else echo "::set-output name=branch::test"; fi
+          if [ ${{ github.ref }} == "refs/heads/main" ]; then echo "::set-output name=branch::main"; else echo "::set-output name=branch::test"; fi
 
       - name: Git Submodule Update
         run: |
